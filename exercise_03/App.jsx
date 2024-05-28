@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const App = () => {
 	const temperature = 25;
@@ -41,5 +42,16 @@ function Footer() {
 		</footer>
 	);
 }
+
+// prop validation
+Header.propTypes = {
+	temp: PropTypes.number,
+};
+Content.propTypes = {
+	temp: PropTypes.number,
+};
+Temperature.propTypes = {
+	temp: PropTypes.number,
+};
 
 export default App;
